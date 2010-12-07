@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3869154312AADBE300973F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3869154212AADBE300973F44 /* Foundation.framework */; };
+		3869154512AADBE300973F44 /* backtrace.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3869154412AADBE300973F44 /* backtrace.1 */; };
+		3869154712AADBE300973F44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3869154612AADBE300973F44 /* main.m */; };
+		38F221C412AAEEA500843A60 /* Symbolication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F221C312AAEEA500843A60 /* Symbolication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3869153C12AADBE300973F44 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				3869154512AADBE300973F44 /* backtrace.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3869153E12AADBE300973F44 /* backtrace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = backtrace; sourceTree = BUILT_PRODUCTS_DIR; };
+		3869154212AADBE300973F44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3869154412AADBE300973F44 /* backtrace.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = backtrace.1; sourceTree = "<group>"; };
+		3869154612AADBE300973F44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3869154912AADBE300973F44 /* backtrace_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backtrace_Prefix.pch; sourceTree = "<group>"; };
+		38F221C312AAEEA500843A60 /* Symbolication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Symbolication.framework; path = /System/Library/PrivateFrameworks/Symbolication.framework; sourceTree = "<absolute>"; };
+		38F221C612AAEEC300843A60 /* _VMUDWARFAbbrevDecl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VMUDWARFAbbrevDecl.h; sourceTree = "<group>"; };
+		38F221C712AAEEC300843A60 /* _VMUDWARFAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VMUDWARFAttribute.h; sourceTree = "<group>"; };
+		38F221C812AAEEC300843A60 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		38F221C912AAEEC300843A60 /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
+		38F221CA12AAEEC300843A60 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
+		38F221CB12AAEEC300843A60 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
+		38F221CC12AAEEC300843A60 /* SafeVMUProcInfoProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SafeVMUProcInfoProtocol-Protocol.h"; sourceTree = "<group>"; };
+		38F221CD12AAEEC300843A60 /* VMUAddressRange-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUAddressRange-Private.h"; sourceTree = "<group>"; };
+		38F221CE12AAEEC300843A60 /* VMUAddressRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUAddressRange.h; sourceTree = "<group>"; };
+		38F221CF12AAEEC300843A60 /* VMUArchitecture-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUArchitecture-Private.h"; sourceTree = "<group>"; };
+		38F221D012AAEEC300843A60 /* VMUArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUArchitecture.h; sourceTree = "<group>"; };
+		38F221D112AAEEC300843A60 /* VMUArchiveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUArchiveHeader.h; sourceTree = "<group>"; };
+		38F221D212AAEEC300843A60 /* VMUBacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUBacktrace.h; sourceTree = "<group>"; };
+		38F221D312AAEEC300843A60 /* VMUCallTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUCallTreeNode.h; sourceTree = "<group>"; };
+		38F221D412AAEEC300843A60 /* VMUClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUClassInfo.h; sourceTree = "<group>"; };
+		38F221D512AAEEC300843A60 /* VMUDebugMapExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDebugMapExtractor.h; sourceTree = "<group>"; };
+		38F221D612AAEEC300843A60 /* VMUDsymExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDsymExtractor.h; sourceTree = "<group>"; };
+		38F221D712AAEEC300843A60 /* VMUDwarfExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDwarfExtractor.h; sourceTree = "<group>"; };
+		38F221D812AAEEC300843A60 /* VMUDyld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDyld.h; sourceTree = "<group>"; };
+		38F221D912AAEEC300843A60 /* VMUDyLibLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDyLibLoadCommand.h; sourceTree = "<group>"; };
+		38F221DA12AAEEC300843A60 /* VMUDyLinkerLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDyLinkerLoadCommand.h; sourceTree = "<group>"; };
+		38F221DB12AAEEC300843A60 /* VMUDySymTabLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDySymTabLoadCommand.h; sourceTree = "<group>"; };
+		38F221DC12AAEEC300843A60 /* VMUFatArch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUFatArch.h; sourceTree = "<group>"; };
+		38F221DD12AAEEC300843A60 /* VMUFatHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUFatHeader.h; sourceTree = "<group>"; };
+		38F221DE12AAEEC300843A60 /* VMUFunctionNameDemangler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUFunctionNameDemangler.h; sourceTree = "<group>"; };
+		38F221DF12AAEEC300843A60 /* VMUHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUHeader.h; sourceTree = "<group>"; };
+		38F221E012AAEEC300843A60 /* VMUIDDyLibLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUIDDyLibLoadCommand.h; sourceTree = "<group>"; };
+		38F221E112AAEEC300843A60 /* VMULazySymbolOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULazySymbolOwner.h; sourceTree = "<group>"; };
+		38F221E212AAEEC300843A60 /* VMULinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULinkedList.h; sourceTree = "<group>"; };
+		38F221E312AAEEC300843A60 /* VMULinkedListEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULinkedListEntry.h; sourceTree = "<group>"; };
+		38F221E412AAEEC300843A60 /* VMULoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULoadCommand.h; sourceTree = "<group>"; };
+		38F221E512AAEEC300843A60 /* VMUMachO32Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachO32Header.h; sourceTree = "<group>"; };
+		38F221E612AAEEC300843A60 /* VMUMachO64Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachO64Header.h; sourceTree = "<group>"; };
+		38F221E712AAEEC300843A60 /* VMUMachOHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachOHeader.h; sourceTree = "<group>"; };
+		38F221E812AAEEC300843A60 /* VMUMachTaskContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachTaskContainer.h; sourceTree = "<group>"; };
+		38F221E912AAEEC300843A60 /* VMUMemory-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUMemory-Protocol.h"; sourceTree = "<group>"; };
+		38F221EA12AAEEC300843A60 /* VMUMemory_Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_Base.h; sourceTree = "<group>"; };
+		38F221EB12AAEEC300843A60 /* VMUMemory_File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_File.h; sourceTree = "<group>"; };
+		38F221EC12AAEEC300843A60 /* VMUMemory_Handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_Handle.h; sourceTree = "<group>"; };
+		38F221ED12AAEEC300843A60 /* VMUMemory_NonContiguousTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_NonContiguousTask.h; sourceTree = "<group>"; };
+		38F221EE12AAEEC300843A60 /* VMUMemory_Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_Task.h; sourceTree = "<group>"; };
+		38F221EF12AAEEC300843A60 /* VMUMemoryView-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUMemoryView-Protocol.h"; sourceTree = "<group>"; };
+		38F221F012AAEEC400843A60 /* VMUMemoryView_Native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Native.h; sourceTree = "<group>"; };
+		38F221F112AAEEC400843A60 /* VMUMemoryView_Native32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Native32.h; sourceTree = "<group>"; };
+		38F221F212AAEEC400843A60 /* VMUMemoryView_Native64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Native64.h; sourceTree = "<group>"; };
+		38F221F312AAEEC400843A60 /* VMUMemoryView_Swapped.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Swapped.h; sourceTree = "<group>"; };
+		38F221F412AAEEC400843A60 /* VMUMemoryView_Swapped32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Swapped32.h; sourceTree = "<group>"; };
+		38F221F512AAEEC400843A60 /* VMUMemoryView_Swapped64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Swapped64.h; sourceTree = "<group>"; };
+		38F221F612AAEEC400843A60 /* VMUNonOverlappingRangeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUNonOverlappingRangeArray.h; sourceTree = "<group>"; };
+		38F221F712AAEEC400843A60 /* VMUNonOverlappingRangeValueTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUNonOverlappingRangeValueTable.h; sourceTree = "<group>"; };
+		38F221F812AAEEC400843A60 /* VMUObjectIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUObjectIdentifier.h; sourceTree = "<group>"; };
+		38F221F912AAEEC400843A60 /* VMUProcessDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUProcessDescription.h; sourceTree = "<group>"; };
+		38F221FA12AAEEC400843A60 /* VMUProcInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUProcInfo.h; sourceTree = "<group>"; };
+		38F221FB12AAEEC400843A60 /* VMUProcList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUProcList.h; sourceTree = "<group>"; };
+		38F221FC12AAEEC400843A60 /* VMURangeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMURangeArray.h; sourceTree = "<group>"; };
+		38F221FD12AAEEC400843A60 /* VMURangeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMURangeValue.h; sourceTree = "<group>"; };
+		38F221FE12AAEEC400843A60 /* VMURegion-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMURegion-Private.h"; sourceTree = "<group>"; };
+		38F221FF12AAEEC400843A60 /* VMURegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMURegion.h; sourceTree = "<group>"; };
+		38F2220012AAEEC400843A60 /* VMUSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSampler.h; sourceTree = "<group>"; };
+		38F2220112AAEEC400843A60 /* VMUSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSection.h; sourceTree = "<group>"; };
+		38F2220212AAEEC400843A60 /* VMUSection32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSection32.h; sourceTree = "<group>"; };
+		38F2220312AAEEC400843A60 /* VMUSection64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSection64.h; sourceTree = "<group>"; };
+		38F2220412AAEEC400843A60 /* VMUSegment32LoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSegment32LoadCommand.h; sourceTree = "<group>"; };
+		38F2220512AAEEC400843A60 /* VMUSegment64LoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSegment64LoadCommand.h; sourceTree = "<group>"; };
+		38F2220612AAEEC400843A60 /* VMUSegmentLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSegmentLoadCommand.h; sourceTree = "<group>"; };
+		38F2220712AAEEC400843A60 /* VMUSourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSourceInfo.h; sourceTree = "<group>"; };
+		38F2220812AAEEC400843A60 /* VMUStabsExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUStabsExtractor.h; sourceTree = "<group>"; };
+		38F2220912AAEEC400843A60 /* VMUSymbol-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUSymbol-Private.h"; sourceTree = "<group>"; };
+		38F2220A12AAEEC400843A60 /* VMUSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbol.h; sourceTree = "<group>"; };
+		38F2220B12AAEEC400843A60 /* VMUSymbolExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolExtractor.h; sourceTree = "<group>"; };
+		38F2220C12AAEEC400843A60 /* VMUSymbolicator-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUSymbolicator-Private.h"; sourceTree = "<group>"; };
+		38F2220D12AAEEC400843A60 /* VMUSymbolicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolicator.h; sourceTree = "<group>"; };
+		38F2220E12AAEEC400843A60 /* VMUSymbolOwner-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUSymbolOwner-Private.h"; sourceTree = "<group>"; };
+		38F2220F12AAEEC400843A60 /* VMUSymbolOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolOwner.h; sourceTree = "<group>"; };
+		38F2221012AAEEC400843A60 /* VMUSymbolOwnerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolOwnerCache.h; sourceTree = "<group>"; };
+		38F2221112AAEEC400843A60 /* VMUSymTabLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymTabLoadCommand.h; sourceTree = "<group>"; };
+		38F2221212AAEEC400843A60 /* VMUTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTask.h; sourceTree = "<group>"; };
+		38F2221312AAEEC400843A60 /* VMUTaskMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTaskMemoryCache.h; sourceTree = "<group>"; };
+		38F2221412AAEEC400843A60 /* VMUTraceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTraceData.h; sourceTree = "<group>"; };
+		38F2221512AAEEC400843A60 /* VMUTraceRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTraceRecord.h; sourceTree = "<group>"; };
+		38F2221612AAEEC400843A60 /* VMUTraceSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTraceSymbol.h; sourceTree = "<group>"; };
+		38F2221712AAEEC400843A60 /* VMUUUIDLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUUUIDLoadCommand.h; sourceTree = "<group>"; };
+		38F2221812AAEEC400843A60 /* VMUVMRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUVMRegion.h; sourceTree = "<group>"; };
+		38F2221912AAEEC400843A60 /* VMUVMRegionIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUVMRegionIdentifier.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3869153B12AADBE300973F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3869154312AADBE300973F44 /* Foundation.framework in Frameworks */,
+				38F221C412AAEEA500843A60 /* Symbolication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3869153112AADBE200973F44 = {
+			isa = PBXGroup;
+			children = (
+				3869153812AADBE200973F44 /* Source */,
+				3869153912AADBE300973F44 /* Documentation */,
+				3869153F12AADBE300973F44 /* Products */,
+				3869154112AADBE300973F44 /* Frameworks */,
+				3869154812AADBE300973F44 /* Other Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		3869153812AADBE200973F44 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3869154612AADBE300973F44 /* main.m */,
+				38F221C512AAEEC300843A60 /* Symbolication */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3869153912AADBE300973F44 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				3869154412AADBE300973F44 /* backtrace.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		3869153F12AADBE300973F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3869153E12AADBE300973F44 /* backtrace */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3869154112AADBE300973F44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3869154212AADBE300973F44 /* Foundation.framework */,
+				38F221C312AAEEA500843A60 /* Symbolication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3869154812AADBE300973F44 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3869154912AADBE300973F44 /* backtrace_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		38F221C512AAEEC300843A60 /* Symbolication */ = {
+			isa = PBXGroup;
+			children = (
+				38F221C612AAEEC300843A60 /* _VMUDWARFAbbrevDecl.h */,
+				38F221C712AAEEC300843A60 /* _VMUDWARFAttribute.h */,
+				38F221C812AAEEC300843A60 /* CDStructures.h */,
+				38F221C912AAEEC300843A60 /* NSCoding-Protocol.h */,
+				38F221CA12AAEEC300843A60 /* NSCopying-Protocol.h */,
+				38F221CB12AAEEC300843A60 /* NSObject-Protocol.h */,
+				38F221CC12AAEEC300843A60 /* SafeVMUProcInfoProtocol-Protocol.h */,
+				38F221CD12AAEEC300843A60 /* VMUAddressRange-Private.h */,
+				38F221CE12AAEEC300843A60 /* VMUAddressRange.h */,
+				38F221CF12AAEEC300843A60 /* VMUArchitecture-Private.h */,
+				38F221D012AAEEC300843A60 /* VMUArchitecture.h */,
+				38F221D112AAEEC300843A60 /* VMUArchiveHeader.h */,
+				38F221D212AAEEC300843A60 /* VMUBacktrace.h */,
+				38F221D312AAEEC300843A60 /* VMUCallTreeNode.h */,
+				38F221D412AAEEC300843A60 /* VMUClassInfo.h */,
+				38F221D512AAEEC300843A60 /* VMUDebugMapExtractor.h */,
+				38F221D612AAEEC300843A60 /* VMUDsymExtractor.h */,
+				38F221D712AAEEC300843A60 /* VMUDwarfExtractor.h */,
+				38F221D812AAEEC300843A60 /* VMUDyld.h */,
+				38F221D912AAEEC300843A60 /* VMUDyLibLoadCommand.h */,
+				38F221DA12AAEEC300843A60 /* VMUDyLinkerLoadCommand.h */,
+				38F221DB12AAEEC300843A60 /* VMUDySymTabLoadCommand.h */,
+				38F221DC12AAEEC300843A60 /* VMUFatArch.h */,
+				38F221DD12AAEEC300843A60 /* VMUFatHeader.h */,
+				38F221DE12AAEEC300843A60 /* VMUFunctionNameDemangler.h */,
+				38F221DF12AAEEC300843A60 /* VMUHeader.h */,
+				38F221E012AAEEC300843A60 /* VMUIDDyLibLoadCommand.h */,
+				38F221E112AAEEC300843A60 /* VMULazySymbolOwner.h */,
+				38F221E212AAEEC300843A60 /* VMULinkedList.h */,
+				38F221E312AAEEC300843A60 /* VMULinkedListEntry.h */,
+				38F221E412AAEEC300843A60 /* VMULoadCommand.h */,
+				38F221E512AAEEC300843A60 /* VMUMachO32Header.h */,
+				38F221E612AAEEC300843A60 /* VMUMachO64Header.h */,
+				38F221E712AAEEC300843A60 /* VMUMachOHeader.h */,
+				38F221E812AAEEC300843A60 /* VMUMachTaskContainer.h */,
+				38F221E912AAEEC300843A60 /* VMUMemory-Protocol.h */,
+				38F221EA12AAEEC300843A60 /* VMUMemory_Base.h */,
+				38F221EB12AAEEC300843A60 /* VMUMemory_File.h */,
+				38F221EC12AAEEC300843A60 /* VMUMemory_Handle.h */,
+				38F221ED12AAEEC300843A60 /* VMUMemory_NonContiguousTask.h */,
+				38F221EE12AAEEC300843A60 /* VMUMemory_Task.h */,
+				38F221EF12AAEEC300843A60 /* VMUMemoryView-Protocol.h */,
+				38F221F012AAEEC400843A60 /* VMUMemoryView_Native.h */,
+				38F221F112AAEEC400843A60 /* VMUMemoryView_Native32.h */,
+				38F221F212AAEEC400843A60 /* VMUMemoryView_Native64.h */,
+				38F221F312AAEEC400843A60 /* VMUMemoryView_Swapped.h */,
+				38F221F412AAEEC400843A60 /* VMUMemoryView_Swapped32.h */,
+				38F221F512AAEEC400843A60 /* VMUMemoryView_Swapped64.h */,
+				38F221F612AAEEC400843A60 /* VMUNonOverlappingRangeArray.h */,
+				38F221F712AAEEC400843A60 /* VMUNonOverlappingRangeValueTable.h */,
+				38F221F812AAEEC400843A60 /* VMUObjectIdentifier.h */,
+				38F221F912AAEEC400843A60 /* VMUProcessDescription.h */,
+				38F221FA12AAEEC400843A60 /* VMUProcInfo.h */,
+				38F221FB12AAEEC400843A60 /* VMUProcList.h */,
+				38F221FC12AAEEC400843A60 /* VMURangeArray.h */,
+				38F221FD12AAEEC400843A60 /* VMURangeValue.h */,
+				38F221FE12AAEEC400843A60 /* VMURegion-Private.h */,
+				38F221FF12AAEEC400843A60 /* VMURegion.h */,
+				38F2220012AAEEC400843A60 /* VMUSampler.h */,
+				38F2220112AAEEC400843A60 /* VMUSection.h */,
+				38F2220212AAEEC400843A60 /* VMUSection32.h */,
+				38F2220312AAEEC400843A60 /* VMUSection64.h */,
+				38F2220412AAEEC400843A60 /* VMUSegment32LoadCommand.h */,
+				38F2220512AAEEC400843A60 /* VMUSegment64LoadCommand.h */,
+				38F2220612AAEEC400843A60 /* VMUSegmentLoadCommand.h */,
+				38F2220712AAEEC400843A60 /* VMUSourceInfo.h */,
+				38F2220812AAEEC400843A60 /* VMUStabsExtractor.h */,
+				38F2220912AAEEC400843A60 /* VMUSymbol-Private.h */,
+				38F2220A12AAEEC400843A60 /* VMUSymbol.h */,
+				38F2220B12AAEEC400843A60 /* VMUSymbolExtractor.h */,
+				38F2220C12AAEEC400843A60 /* VMUSymbolicator-Private.h */,
+				38F2220D12AAEEC400843A60 /* VMUSymbolicator.h */,
+				38F2220E12AAEEC400843A60 /* VMUSymbolOwner-Private.h */,
+				38F2220F12AAEEC400843A60 /* VMUSymbolOwner.h */,
+				38F2221012AAEEC400843A60 /* VMUSymbolOwnerCache.h */,
+				38F2221112AAEEC400843A60 /* VMUSymTabLoadCommand.h */,
+				38F2221212AAEEC400843A60 /* VMUTask.h */,
+				38F2221312AAEEC400843A60 /* VMUTaskMemoryCache.h */,
+				38F2221412AAEEC400843A60 /* VMUTraceData.h */,
+				38F2221512AAEEC400843A60 /* VMUTraceRecord.h */,
+				38F2221612AAEEC400843A60 /* VMUTraceSymbol.h */,
+				38F2221712AAEEC400843A60 /* VMUUUIDLoadCommand.h */,
+				38F2221812AAEEC400843A60 /* VMUVMRegion.h */,
+				38F2221912AAEEC400843A60 /* VMUVMRegionIdentifier.h */,
+			);
+			path = Symbolication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3869153D12AADBE300973F44 /* backtrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3869154C12AADBE300973F44 /* Build configuration list for PBXNativeTarget "backtrace" */;
+			buildPhases = (
+				3869153A12AADBE300973F44 /* Sources */,
+				3869153B12AADBE300973F44 /* Frameworks */,
+				3869153C12AADBE300973F44 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = backtrace;
+			productName = backtrace;
+			productReference = 3869153E12AADBE300973F44 /* backtrace */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3869153312AADBE200973F44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Kobo Inc.";
+			};
+			buildConfigurationList = 3869153612AADBE200973F44 /* Build configuration list for PBXProject "backtrace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3869153112AADBE200973F44;
+			productRefGroup = 3869153F12AADBE300973F44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3869153D12AADBE300973F44 /* backtrace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3869153A12AADBE300973F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3869154712AADBE300973F44 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3869154A12AADBE300973F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		3869154B12AADBE300973F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		3869154D12AADBE300973F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = backtrace_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = backtrace;
+			};
+			name = Debug;
+		};
+		3869154E12AADBE300973F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = backtrace_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = backtrace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3869153612AADBE200973F44 /* Build configuration list for PBXProject "backtrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3869154A12AADBE300973F44 /* Debug */,
+				3869154B12AADBE300973F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3869154C12AADBE300973F44 /* Build configuration list for PBXNativeTarget "backtrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3869154D12AADBE300973F44 /* Debug */,
+				3869154E12AADBE300973F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3869153312AADBE200973F44 /* Project object */;
+}

@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		384F902812A329B0009673A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384F902712A329B0009673A5 /* Cocoa.framework */; };
+		384F902D12A329B0009673A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 384F902B12A329B0009673A5 /* InfoPlist.strings */; };
+		384F902F12A329B0009673A5 /* FAILapp-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 384F902E12A329B0009673A5 /* FAILapp-main.m */; };
+		384F903212A329B0009673A5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384F903012A329B0009673A5 /* MainMenu.xib */; };
+		384F903512A329B0009673A5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 384F903312A329B0009673A5 /* Credits.rtf */; };
+		384F903812A329B0009673A5 /* FAILappAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 384F903712A329B0009673A5 /* FAILappAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		384F902412A329B0009673A5 /* FAILapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAILapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		384F902712A329B0009673A5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		384F902912A329B0009673A5 /* FAILapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAILapp-Info.plist"; sourceTree = "<group>"; };
+		384F902A12A329B0009673A5 /* FAILapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAILapp-Prefix.pch"; sourceTree = "<group>"; };
+		384F902C12A329B0009673A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		384F902E12A329B0009673A5 /* FAILapp-main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FAILapp-main.m"; sourceTree = "<group>"; };
+		384F903112A329B0009673A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		384F903412A329B0009673A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		384F903612A329B0009673A5 /* FAILappAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAILappAppDelegate.h; sourceTree = "<group>"; };
+		384F903712A329B0009673A5 /* FAILappAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAILappAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		384F902112A329B0009673A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384F902812A329B0009673A5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		384F901512A329AF009673A5 = {
+			isa = PBXGroup;
+			children = (
+				384F901C12A329AF009673A5 /* Classes */,
+				384F901D12A329B0009673A5 /* Other Sources */,
+				384F901E12A329B0009673A5 /* Resources */,
+				384F901F12A329B0009673A5 /* Frameworks */,
+				384F902512A329B0009673A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		384F901C12A329AF009673A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				384F903612A329B0009673A5 /* FAILappAppDelegate.h */,
+				384F903712A329B0009673A5 /* FAILappAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		384F901D12A329B0009673A5 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				384F902A12A329B0009673A5 /* FAILapp-Prefix.pch */,
+				384F902E12A329B0009673A5 /* FAILapp-main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		384F901E12A329B0009673A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				384F902912A329B0009673A5 /* FAILapp-Info.plist */,
+				384F902B12A329B0009673A5 /* InfoPlist.strings */,
+				384F903012A329B0009673A5 /* MainMenu.xib */,
+				384F903312A329B0009673A5 /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		384F901F12A329B0009673A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				384F902712A329B0009673A5 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		384F902512A329B0009673A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				384F902412A329B0009673A5 /* FAILapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		384F902312A329B0009673A5 /* FAILapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 384F903B12A329B0009673A5 /* Build configuration list for PBXNativeTarget "FAILapp" */;
+			buildPhases = (
+				384F902012A329B0009673A5 /* Sources */,
+				384F902112A329B0009673A5 /* Frameworks */,
+				384F902212A329B0009673A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAILapp;
+			productName = FAILapp;
+			productReference = 384F902412A329B0009673A5 /* FAILapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		384F901712A329AF009673A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Kobo Inc.";
+			};
+			buildConfigurationList = 384F901A12A329AF009673A5 /* Build configuration list for PBXProject "FAILapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 384F901512A329AF009673A5;
+			productRefGroup = 384F902512A329B0009673A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				384F902312A329B0009673A5 /* FAILapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		384F902212A329B0009673A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384F902D12A329B0009673A5 /* InfoPlist.strings in Resources */,
+				384F903212A329B0009673A5 /* MainMenu.xib in Resources */,
+				384F903512A329B0009673A5 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		384F902012A329B0009673A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384F902F12A329B0009673A5 /* FAILapp-main.m in Sources */,
+				384F903812A329B0009673A5 /* FAILappAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		384F902B12A329B0009673A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384F902C12A329B0009673A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		384F903012A329B0009673A5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384F903112A329B0009673A5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		384F903312A329B0009673A5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				384F903412A329B0009673A5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		384F903912A329B0009673A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		384F903A12A329B0009673A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		384F903C12A329B0009673A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FAILapp-Prefix.pch";
+				INFOPLIST_FILE = "FAILapp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		384F903D12A329B0009673A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FAILapp-Prefix.pch";
+				INFOPLIST_FILE = "FAILapp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		384F901A12A329AF009673A5 /* Build configuration list for PBXProject "FAILapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384F903912A329B0009673A5 /* Debug */,
+				384F903A12A329B0009673A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		384F903B12A329B0009673A5 /* Build configuration list for PBXNativeTarget "FAILapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				384F903C12A329B0009673A5 /* Debug */,
+				384F903D12A329B0009673A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 384F901712A329AF009673A5 /* Project object */;
+}

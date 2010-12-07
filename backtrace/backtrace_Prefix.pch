@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'backtrace' target in the 'backtrace' project
+//
+
+#ifdef __OBJC__
+#endif
+

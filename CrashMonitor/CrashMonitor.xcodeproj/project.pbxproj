@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		384EA8AC12A9468D0078AD85 /* Symbolication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384EA8AB12A9468D0078AD85 /* Symbolication.framework */; };
+		8DD76F9A0486AA7600D96B5E /* CrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* CrashMonitor.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		8DD76F9F0486AA7600D96B5E /* CrashMonitor.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* CrashMonitor.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F9F0486AA7600D96B5E /* CrashMonitor.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* CrashMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashMonitor.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32A70AAB03705E1F00C91783 /* CrashMonitor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashMonitor_Prefix.pch; sourceTree = "<group>"; };
+		384EA8AB12A9468D0078AD85 /* Symbolication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Symbolication.framework; path = /System/Library/PrivateFrameworks/Symbolication.framework; sourceTree = "<absolute>"; };
+		384EA8B212A94AED0078AD85 /* _VMUDWARFAbbrevDecl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VMUDWARFAbbrevDecl.h; sourceTree = "<group>"; };
+		384EA8B312A94AED0078AD85 /* _VMUDWARFAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _VMUDWARFAttribute.h; sourceTree = "<group>"; };
+		384EA8B412A94AED0078AD85 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		384EA8B512A94AED0078AD85 /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
+		384EA8B612A94AED0078AD85 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
+		384EA8B712A94AED0078AD85 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
+		384EA8B812A94AED0078AD85 /* SafeVMUProcInfoProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SafeVMUProcInfoProtocol-Protocol.h"; sourceTree = "<group>"; };
+		384EA8B912A94AED0078AD85 /* VMUAddressRange-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUAddressRange-Private.h"; sourceTree = "<group>"; };
+		384EA8BA12A94AED0078AD85 /* VMUAddressRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUAddressRange.h; sourceTree = "<group>"; };
+		384EA8BB12A94AED0078AD85 /* VMUArchitecture-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUArchitecture-Private.h"; sourceTree = "<group>"; };
+		384EA8BC12A94AED0078AD85 /* VMUArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUArchitecture.h; sourceTree = "<group>"; };
+		384EA8BD12A94AED0078AD85 /* VMUArchiveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUArchiveHeader.h; sourceTree = "<group>"; };
+		384EA8BE12A94AED0078AD85 /* VMUBacktrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUBacktrace.h; sourceTree = "<group>"; };
+		384EA8BF12A94AED0078AD85 /* VMUCallTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUCallTreeNode.h; sourceTree = "<group>"; };
+		384EA8C012A94AED0078AD85 /* VMUClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUClassInfo.h; sourceTree = "<group>"; };
+		384EA8C112A94AED0078AD85 /* VMUDebugMapExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDebugMapExtractor.h; sourceTree = "<group>"; };
+		384EA8C212A94AED0078AD85 /* VMUDsymExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDsymExtractor.h; sourceTree = "<group>"; };
+		384EA8C312A94AED0078AD85 /* VMUDwarfExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDwarfExtractor.h; sourceTree = "<group>"; };
+		384EA8C412A94AED0078AD85 /* VMUDyld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDyld.h; sourceTree = "<group>"; };
+		384EA8C512A94AED0078AD85 /* VMUDyLibLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDyLibLoadCommand.h; sourceTree = "<group>"; };
+		384EA8C612A94AED0078AD85 /* VMUDyLinkerLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDyLinkerLoadCommand.h; sourceTree = "<group>"; };
+		384EA8C712A94AED0078AD85 /* VMUDySymTabLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUDySymTabLoadCommand.h; sourceTree = "<group>"; };
+		384EA8C812A94AED0078AD85 /* VMUFatArch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUFatArch.h; sourceTree = "<group>"; };
+		384EA8C912A94AED0078AD85 /* VMUFatHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUFatHeader.h; sourceTree = "<group>"; };
+		384EA8CA12A94AED0078AD85 /* VMUFunctionNameDemangler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUFunctionNameDemangler.h; sourceTree = "<group>"; };
+		384EA8CB12A94AED0078AD85 /* VMUHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUHeader.h; sourceTree = "<group>"; };
+		384EA8CC12A94AED0078AD85 /* VMUIDDyLibLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUIDDyLibLoadCommand.h; sourceTree = "<group>"; };
+		384EA8CD12A94AED0078AD85 /* VMULazySymbolOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULazySymbolOwner.h; sourceTree = "<group>"; };
+		384EA8CE12A94AED0078AD85 /* VMULinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULinkedList.h; sourceTree = "<group>"; };
+		384EA8CF12A94AED0078AD85 /* VMULinkedListEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULinkedListEntry.h; sourceTree = "<group>"; };
+		384EA8D012A94AED0078AD85 /* VMULoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMULoadCommand.h; sourceTree = "<group>"; };
+		384EA8D112A94AED0078AD85 /* VMUMachO32Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachO32Header.h; sourceTree = "<group>"; };
+		384EA8D212A94AED0078AD85 /* VMUMachO64Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachO64Header.h; sourceTree = "<group>"; };
+		384EA8D312A94AED0078AD85 /* VMUMachOHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachOHeader.h; sourceTree = "<group>"; };
+		384EA8D412A94AED0078AD85 /* VMUMachTaskContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMachTaskContainer.h; sourceTree = "<group>"; };
+		384EA8D512A94AED0078AD85 /* VMUMemory_Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_Base.h; sourceTree = "<group>"; };
+		384EA8D612A94AED0078AD85 /* VMUMemory_File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_File.h; sourceTree = "<group>"; };
+		384EA8D712A94AED0078AD85 /* VMUMemory_Handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_Handle.h; sourceTree = "<group>"; };
+		384EA8D812A94AED0078AD85 /* VMUMemory_NonContiguousTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_NonContiguousTask.h; sourceTree = "<group>"; };
+		384EA8D912A94AED0078AD85 /* VMUMemory_Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemory_Task.h; sourceTree = "<group>"; };
+		384EA8DA12A94AED0078AD85 /* VMUMemory-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUMemory-Protocol.h"; sourceTree = "<group>"; };
+		384EA8DB12A94AED0078AD85 /* VMUMemoryView_Native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Native.h; sourceTree = "<group>"; };
+		384EA8DC12A94AED0078AD85 /* VMUMemoryView_Native32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Native32.h; sourceTree = "<group>"; };
+		384EA8DD12A94AED0078AD85 /* VMUMemoryView_Native64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Native64.h; sourceTree = "<group>"; };
+		384EA8DE12A94AED0078AD85 /* VMUMemoryView_Swapped.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Swapped.h; sourceTree = "<group>"; };
+		384EA8DF12A94AED0078AD85 /* VMUMemoryView_Swapped32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Swapped32.h; sourceTree = "<group>"; };
+		384EA8E012A94AED0078AD85 /* VMUMemoryView_Swapped64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUMemoryView_Swapped64.h; sourceTree = "<group>"; };
+		384EA8E112A94AED0078AD85 /* VMUMemoryView-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUMemoryView-Protocol.h"; sourceTree = "<group>"; };
+		384EA8E212A94AED0078AD85 /* VMUNonOverlappingRangeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUNonOverlappingRangeArray.h; sourceTree = "<group>"; };
+		384EA8E312A94AED0078AD85 /* VMUNonOverlappingRangeValueTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUNonOverlappingRangeValueTable.h; sourceTree = "<group>"; };
+		384EA8E412A94AED0078AD85 /* VMUObjectIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUObjectIdentifier.h; sourceTree = "<group>"; };
+		384EA8E512A94AED0078AD85 /* VMUProcessDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUProcessDescription.h; sourceTree = "<group>"; };
+		384EA8E612A94AED0078AD85 /* VMUProcInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUProcInfo.h; sourceTree = "<group>"; };
+		384EA8E712A94AED0078AD85 /* VMUProcList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUProcList.h; sourceTree = "<group>"; };
+		384EA8E812A94AED0078AD85 /* VMURangeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMURangeArray.h; sourceTree = "<group>"; };
+		384EA8E912A94AED0078AD85 /* VMURangeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMURangeValue.h; sourceTree = "<group>"; };
+		384EA8EA12A94AED0078AD85 /* VMURegion-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMURegion-Private.h"; sourceTree = "<group>"; };
+		384EA8EB12A94AED0078AD85 /* VMURegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMURegion.h; sourceTree = "<group>"; };
+		384EA8EC12A94AED0078AD85 /* VMUSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSampler.h; sourceTree = "<group>"; };
+		384EA8ED12A94AED0078AD85 /* VMUSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSection.h; sourceTree = "<group>"; };
+		384EA8EE12A94AED0078AD85 /* VMUSection32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSection32.h; sourceTree = "<group>"; };
+		384EA8EF12A94AED0078AD85 /* VMUSection64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSection64.h; sourceTree = "<group>"; };
+		384EA8F012A94AED0078AD85 /* VMUSegment32LoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSegment32LoadCommand.h; sourceTree = "<group>"; };
+		384EA8F112A94AED0078AD85 /* VMUSegment64LoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSegment64LoadCommand.h; sourceTree = "<group>"; };
+		384EA8F212A94AED0078AD85 /* VMUSegmentLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSegmentLoadCommand.h; sourceTree = "<group>"; };
+		384EA8F312A94AED0078AD85 /* VMUSourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSourceInfo.h; sourceTree = "<group>"; };
+		384EA8F412A94AED0078AD85 /* VMUStabsExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUStabsExtractor.h; sourceTree = "<group>"; };
+		384EA8F512A94AED0078AD85 /* VMUSymbol-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUSymbol-Private.h"; sourceTree = "<group>"; };
+		384EA8F612A94AED0078AD85 /* VMUSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbol.h; sourceTree = "<group>"; };
+		384EA8F712A94AED0078AD85 /* VMUSymbolExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolExtractor.h; sourceTree = "<group>"; };
+		384EA8F812A94AED0078AD85 /* VMUSymbolicator-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUSymbolicator-Private.h"; sourceTree = "<group>"; };
+		384EA8F912A94AED0078AD85 /* VMUSymbolicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolicator.h; sourceTree = "<group>"; };
+		384EA8FA12A94AED0078AD85 /* VMUSymbolOwner-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMUSymbolOwner-Private.h"; sourceTree = "<group>"; };
+		384EA8FB12A94AED0078AD85 /* VMUSymbolOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolOwner.h; sourceTree = "<group>"; };
+		384EA8FC12A94AED0078AD85 /* VMUSymbolOwnerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymbolOwnerCache.h; sourceTree = "<group>"; };
+		384EA8FD12A94AED0078AD85 /* VMUSymTabLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUSymTabLoadCommand.h; sourceTree = "<group>"; };
+		384EA8FE12A94AED0078AD85 /* VMUTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTask.h; sourceTree = "<group>"; };
+		384EA8FF12A94AED0078AD85 /* VMUTaskMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTaskMemoryCache.h; sourceTree = "<group>"; };
+		384EA90012A94AED0078AD85 /* VMUTraceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTraceData.h; sourceTree = "<group>"; };
+		384EA90112A94AED0078AD85 /* VMUTraceRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTraceRecord.h; sourceTree = "<group>"; };
+		384EA90212A94AED0078AD85 /* VMUTraceSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUTraceSymbol.h; sourceTree = "<group>"; };
+		384EA90312A94AED0078AD85 /* VMUUUIDLoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUUUIDLoadCommand.h; sourceTree = "<group>"; };
+		384EA90412A94AED0078AD85 /* VMUVMRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUVMRegion.h; sourceTree = "<group>"; };
+		384EA90512A94AED0078AD85 /* VMUVMRegionIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUVMRegionIdentifier.h; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* CrashMonitor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CrashMonitor; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859EA3029092ED04C91782 /* CrashMonitor.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CrashMonitor.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+				384EA8AC12A9468D0078AD85 /* Symbolication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* CrashMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859EA2029092E104C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = CrashMonitor;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				32A70AAB03705E1F00C91783 /* CrashMonitor_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* CrashMonitor.m */,
+				384EA8B012A94A910078AD85 /* Symbolication */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+				384EA8AB12A9468D0078AD85 /* Symbolication.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* CrashMonitor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		384EA8B012A94A910078AD85 /* Symbolication */ = {
+			isa = PBXGroup;
+			children = (
+				384EA8B212A94AED0078AD85 /* _VMUDWARFAbbrevDecl.h */,
+				384EA8B312A94AED0078AD85 /* _VMUDWARFAttribute.h */,
+				384EA8B412A94AED0078AD85 /* CDStructures.h */,
+				384EA8B512A94AED0078AD85 /* NSCoding-Protocol.h */,
+				384EA8B612A94AED0078AD85 /* NSCopying-Protocol.h */,
+				384EA8B712A94AED0078AD85 /* NSObject-Protocol.h */,
+				384EA8B812A94AED0078AD85 /* SafeVMUProcInfoProtocol-Protocol.h */,
+				384EA8B912A94AED0078AD85 /* VMUAddressRange-Private.h */,
+				384EA8BA12A94AED0078AD85 /* VMUAddressRange.h */,
+				384EA8BB12A94AED0078AD85 /* VMUArchitecture-Private.h */,
+				384EA8BC12A94AED0078AD85 /* VMUArchitecture.h */,
+				384EA8BD12A94AED0078AD85 /* VMUArchiveHeader.h */,
+				384EA8BE12A94AED0078AD85 /* VMUBacktrace.h */,
+				384EA8BF12A94AED0078AD85 /* VMUCallTreeNode.h */,
+				384EA8C012A94AED0078AD85 /* VMUClassInfo.h */,
+				384EA8C112A94AED0078AD85 /* VMUDebugMapExtractor.h */,
+				384EA8C212A94AED0078AD85 /* VMUDsymExtractor.h */,
+				384EA8C312A94AED0078AD85 /* VMUDwarfExtractor.h */,
+				384EA8C412A94AED0078AD85 /* VMUDyld.h */,
+				384EA8C512A94AED0078AD85 /* VMUDyLibLoadCommand.h */,
+				384EA8C612A94AED0078AD85 /* VMUDyLinkerLoadCommand.h */,
+				384EA8C712A94AED0078AD85 /* VMUDySymTabLoadCommand.h */,
+				384EA8C812A94AED0078AD85 /* VMUFatArch.h */,
+				384EA8C912A94AED0078AD85 /* VMUFatHeader.h */,
+				384EA8CA12A94AED0078AD85 /* VMUFunctionNameDemangler.h */,
+				384EA8CB12A94AED0078AD85 /* VMUHeader.h */,
+				384EA8CC12A94AED0078AD85 /* VMUIDDyLibLoadCommand.h */,
+				384EA8CD12A94AED0078AD85 /* VMULazySymbolOwner.h */,
+				384EA8CE12A94AED0078AD85 /* VMULinkedList.h */,
+				384EA8CF12A94AED0078AD85 /* VMULinkedListEntry.h */,
+				384EA8D012A94AED0078AD85 /* VMULoadCommand.h */,
+				384EA8D112A94AED0078AD85 /* VMUMachO32Header.h */,
+				384EA8D212A94AED0078AD85 /* VMUMachO64Header.h */,
+				384EA8D312A94AED0078AD85 /* VMUMachOHeader.h */,
+				384EA8D412A94AED0078AD85 /* VMUMachTaskContainer.h */,
+				384EA8D512A94AED0078AD85 /* VMUMemory_Base.h */,
+				384EA8D612A94AED0078AD85 /* VMUMemory_File.h */,
+				384EA8D712A94AED0078AD85 /* VMUMemory_Handle.h */,
+				384EA8D812A94AED0078AD85 /* VMUMemory_NonContiguousTask.h */,
+				384EA8D912A94AED0078AD85 /* VMUMemory_Task.h */,
+				384EA8DA12A94AED0078AD85 /* VMUMemory-Protocol.h */,
+				384EA8DB12A94AED0078AD85 /* VMUMemoryView_Native.h */,
+				384EA8DC12A94AED0078AD85 /* VMUMemoryView_Native32.h */,
+				384EA8DD12A94AED0078AD85 /* VMUMemoryView_Native64.h */,
+				384EA8DE12A94AED0078AD85 /* VMUMemoryView_Swapped.h */,
+				384EA8DF12A94AED0078AD85 /* VMUMemoryView_Swapped32.h */,
+				384EA8E012A94AED0078AD85 /* VMUMemoryView_Swapped64.h */,
+				384EA8E112A94AED0078AD85 /* VMUMemoryView-Protocol.h */,
+				384EA8E212A94AED0078AD85 /* VMUNonOverlappingRangeArray.h */,
+				384EA8E312A94AED0078AD85 /* VMUNonOverlappingRangeValueTable.h */,
+				384EA8E412A94AED0078AD85 /* VMUObjectIdentifier.h */,
+				384EA8E512A94AED0078AD85 /* VMUProcessDescription.h */,
+				384EA8E612A94AED0078AD85 /* VMUProcInfo.h */,
+				384EA8E712A94AED0078AD85 /* VMUProcList.h */,
+				384EA8E812A94AED0078AD85 /* VMURangeArray.h */,
+				384EA8E912A94AED0078AD85 /* VMURangeValue.h */,
+				384EA8EA12A94AED0078AD85 /* VMURegion-Private.h */,
+				384EA8EB12A94AED0078AD85 /* VMURegion.h */,
+				384EA8EC12A94AED0078AD85 /* VMUSampler.h */,
+				384EA8ED12A94AED0078AD85 /* VMUSection.h */,
+				384EA8EE12A94AED0078AD85 /* VMUSection32.h */,
+				384EA8EF12A94AED0078AD85 /* VMUSection64.h */,
+				384EA8F012A94AED0078AD85 /* VMUSegment32LoadCommand.h */,
+				384EA8F112A94AED0078AD85 /* VMUSegment64LoadCommand.h */,
+				384EA8F212A94AED0078AD85 /* VMUSegmentLoadCommand.h */,
+				384EA8F312A94AED0078AD85 /* VMUSourceInfo.h */,
+				384EA8F412A94AED0078AD85 /* VMUStabsExtractor.h */,
+				384EA8F512A94AED0078AD85 /* VMUSymbol-Private.h */,
+				384EA8F612A94AED0078AD85 /* VMUSymbol.h */,
+				384EA8F712A94AED0078AD85 /* VMUSymbolExtractor.h */,
+				384EA8F812A94AED0078AD85 /* VMUSymbolicator-Private.h */,
+				384EA8F912A94AED0078AD85 /* VMUSymbolicator.h */,
+				384EA8FA12A94AED0078AD85 /* VMUSymbolOwner-Private.h */,
+				384EA8FB12A94AED0078AD85 /* VMUSymbolOwner.h */,
+				384EA8FC12A94AED0078AD85 /* VMUSymbolOwnerCache.h */,
+				384EA8FD12A94AED0078AD85 /* VMUSymTabLoadCommand.h */,
+				384EA8FE12A94AED0078AD85 /* VMUTask.h */,
+				384EA8FF12A94AED0078AD85 /* VMUTaskMemoryCache.h */,
+				384EA90012A94AED0078AD85 /* VMUTraceData.h */,
+				384EA90112A94AED0078AD85 /* VMUTraceRecord.h */,
+				384EA90212A94AED0078AD85 /* VMUTraceSymbol.h */,
+				384EA90312A94AED0078AD85 /* VMUUUIDLoadCommand.h */,
+				384EA90412A94AED0078AD85 /* VMUVMRegion.h */,
+				384EA90512A94AED0078AD85 /* VMUVMRegionIdentifier.h */,
+			);
+			path = Symbolication;
+			sourceTree = "<group>";
+		};
+		C6859EA2029092E104C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859EA3029092ED04C91782 /* CrashMonitor.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* CrashMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "CrashMonitor" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashMonitor;
+			productInstallPath = "$(HOME)/bin";
+			productName = CrashMonitor;
+			productReference = 8DD76FA10486AA7600D96B5E /* CrashMonitor */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "CrashMonitor" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* CrashMonitor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* CrashMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* CrashMonitor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CrashMonitor_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = CrashMonitor;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CrashMonitor_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = CrashMonitor;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "CrashMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "CrashMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
