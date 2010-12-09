@@ -10,11 +10,12 @@
 
 @class CatalogueWindowController;
 
-@interface Catalogue_AppDelegate : NSObject 
+@interface Catalogue_AppDelegate : NSObject <NSApplicationDelegate> 
 {
     CatalogueWindowController * mainWindowController;
 }
 
 @property (nonatomic, retain) CatalogueWindowController * mainWindowController;
+@property (nonatomic, readonly) NSURL * defaultStoreURL;
 
 @end

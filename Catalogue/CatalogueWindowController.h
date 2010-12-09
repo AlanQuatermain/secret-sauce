@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface CatalogueWindowController : NSWindowController
 {
     NSURL *storeURL;
@@ -19,10 +18,16 @@
 
 - (id) initWithStoreURL: (NSURL *) aURL;
 
+@property (copy) NSURL * storeURL;
+@property (assign) BOOL readOnly;
+@property (retain) IBOutlet NSArrayController * listArrayController;
+
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:sender;
+
+- (void) importItems: (NSArray *) items fromForeignContext: (NSManagedObjectContext *) foreignContext;
 
 @end

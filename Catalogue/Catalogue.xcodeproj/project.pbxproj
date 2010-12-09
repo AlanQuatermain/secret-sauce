@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
+		3807DCC712B0375600F65FF7 /* TimeMachineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3807DCC612B0375600F65FF7 /* TimeMachineController.m */; };
+		3807DCEF12B08E7100F65FF7 /* Backup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3807DCEE12B08E7100F65FF7 /* Backup.framework */; };
 		38F1134612B02DA70074703A /* CatalogueWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1134512B02DA70074703A /* CatalogueWindowController.m */; };
 		770B37ED0679A11B001EADE2 /* Catalogue_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* Catalogue_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* Catalogue_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Catalogue_AppDelegate.m */; };
@@ -24,6 +26,10 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Catalogue_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalogue_Prefix.pch; sourceTree = "<group>"; };
+		3807DCC512B0375600F65FF7 /* TimeMachineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeMachineController.h; sourceTree = "<group>"; };
+		3807DCC612B0375600F65FF7 /* TimeMachineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeMachineController.m; sourceTree = "<group>"; };
+		3807DCC912B03A1C00F65FF7 /* BUTimeMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUTimeMachine.h; sourceTree = "<group>"; };
+		3807DCEE12B08E7100F65FF7 /* Backup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Backup.framework; path = /System/Library/PrivateFrameworks/Backup.framework; sourceTree = "<absolute>"; };
 		38F1134412B02DA70074703A /* CatalogueWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueWindowController.h; sourceTree = "<group>"; };
 		38F1134512B02DA70074703A /* CatalogueWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueWindowController.m; sourceTree = "<group>"; };
 		770B37EC0679A11B001EADE2 /* Catalogue_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Catalogue_DataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -40,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				3807DCEF12B08E7100F65FF7 /* Backup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,10 +56,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3807DCC912B03A1C00F65FF7 /* BUTimeMachine.h */,
 				77C8280B06725ACE000B614F /* Catalogue_AppDelegate.h */,
 				77C8280C06725ACE000B614F /* Catalogue_AppDelegate.m */,
 				38F1134412B02DA70074703A /* CatalogueWindowController.h */,
 				38F1134512B02DA70074703A /* CatalogueWindowController.m */,
+				3807DCC512B0375600F65FF7 /* TimeMachineController.h */,
+				3807DCC612B0375600F65FF7 /* TimeMachineController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -92,6 +102,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				3807DCEE12B08E7100F65FF7 /* Backup.framework */,
 			);
 			name = Catalogue;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 				77C8280E06725ACE000B614F /* Catalogue_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* Catalogue_DataModel.xcdatamodel in Sources */,
 				38F1134612B02DA70074703A /* CatalogueWindowController.m in Sources */,
+				3807DCC712B0375600F65FF7 /* TimeMachineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +240,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -246,6 +262,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

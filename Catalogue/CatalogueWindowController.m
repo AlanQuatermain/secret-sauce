@@ -8,7 +8,15 @@
 
 #import "CatalogueWindowController.h"
 
+@interface CatalogueWindowController ()
+@property (nonatomic, retain, readwrite) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, retain, readwrite) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readwrite) NSManagedObjectContext *managedObjectContext;
+@end
+
 @implementation CatalogueWindowController
+
+@synthesize storeURL, persistentStoreCoordinator, managedObjectModel, managedObjectContext, readOnly, listArrayController;
 
 - (id) initWithStoreURL: (NSURL *) aURL
 {
@@ -16,7 +24,7 @@
     if ( self == nil )
         return ( nil );
     
-    storeURL = [aURL copy];
+    self.storeURL = aURL;
     
     return ( self );
 }
@@ -24,12 +32,65 @@
 - (void) dealloc
 {
     [storeURL release];
+    [listArrayController release];
     [persistentStoreCoordinator release];
     [managedObjectModel release];
     [managedObjectContext release];
     [super dealloc];
 }
 
+- (void) importItems: (NSArray *) items fromForeignContext: (NSManagedObjectContext *) foreignContext
+{
+    dispatch_async( dispatch_get_main_queue(), ^{
+        for ( NSManagedObject * obj in items )
+        {
+            NSManagedObject * newBook = [NSEntityDescription insertNewObjectForEntityForName: @"Book"
+                                                                      inManagedObjectContext: self.managedObjectContext];
+            NSDictionary * values = [obj dictionaryWithValuesForKeys: [NSArray arrayWithObjects: @"category", @"publicationDate", @"title", nil]];
+            [newBook setValuesForKeysWithDictionary: values];
+            
+            // now determine the Author
+            NSManagedObject * author = [obj valueForKey: @"author"];
+            if ( author == nil )
+                continue;
+            
+            NSFetchRequest * req = [NSFetchRequest new];
+            [req setEntity: [NSEntityDescription entityForName: @"Author" inManagedObjectContext: self.managedObjectContext]];
+            [req setFetchLimit: 1];
+            [req setPredicate: [NSPredicate predicateWithFormat: @"(firstName == %@) and (lastName == %@)", [author valueForKey: @"firstName"], [author valueForKey: @"lastName"]]];
+            
+            id existingAuthor = [[self.managedObjectContext executeFetchRequest: req error: NULL] lastObject];
+            if ( existingAuthor != nil )
+            {
+                [newBook setValue: existingAuthor forKey: @"author"];
+                continue;
+            }
+            
+            NSManagedObject * newAuthor = [NSEntityDescription insertNewObjectForEntityForName: @"Author"
+                                                                        inManagedObjectContext: self.managedObjectContext];
+            values = [author dictionaryWithValuesForKeys: [NSArray arrayWithObjects: @"firstName", @"lastName", nil]];
+            [newAuthor setValuesForKeysWithDictionary: values];
+            
+            [newBook setValue: newAuthor forKey: @"author"];
+        }
+    });
+    
+    [self saveAction: self];
+}
+
+- (void) setStoreURL: (NSURL *) newURL
+{
+    self.managedObjectContext = nil;
+    self.managedObjectModel = nil;
+    self.persistentStoreCoordinator = nil;
+    
+    NSURL * aURL = [newURL copy];
+    [storeURL release];
+    storeURL = aURL;
+    
+    // load the new context stack
+    (void)[self managedObjectContext];
+}
 
 /**
  Creates, retains, and returns the managed object model for the application 
@@ -40,7 +101,7 @@
     
     if (managedObjectModel) return managedObjectModel;
 	
-    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
+    self.managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     return managedObjectModel;
 }
 
@@ -63,19 +124,9 @@
         return nil;
     }
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *applicationSupportDirectory = [self applicationSupportDirectory];
-    NSError *error = nil;
+    NSError * error = nil;
     
-    if ( ![fileManager fileExistsAtPath:applicationSupportDirectory isDirectory:NULL] ) {
-		if (![fileManager createDirectoryAtPath:applicationSupportDirectory withIntermediateDirectories:NO attributes:nil error:&error]) {
-            NSAssert(NO, ([NSString stringWithFormat:@"Failed to create App Support directory %@ : %@", applicationSupportDirectory,error]));
-            NSLog(@"Error creating application support directory at %@ : %@",applicationSupportDirectory,error);
-            return nil;
-		}
-    }
-    
-    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: mom];
+    self.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: mom];
     if (![persistentStoreCoordinator addPersistentStoreWithType: NSXMLStoreType 
                                                   configuration: nil 
                                                             URL: storeURL 
@@ -107,7 +158,7 @@
         [[NSApplication sharedApplication] presentError:error];
         return nil;
     }
-    managedObjectContext = [[NSManagedObjectContext alloc] init];
+    self.managedObjectContext = [[NSManagedObjectContext alloc] init];
     [managedObjectContext setPersistentStoreCoordinator: coordinator];
     
     return managedObjectContext;

@@ -8,6 +8,7 @@
 
 #import "Catalogue_AppDelegate.h"
 #import "CatalogueWindowController.h"
+#import "TimeMachineController.h"
 
 @implementation Catalogue_AppDelegate
 
@@ -33,14 +34,18 @@
     return [baseURL URLByAppendingPathComponent: @"Catalogue"];
 }
 
+- (NSURL *) defaultStoreURL
+{
+    return ( [[self applicationSupportDirectory] URLByAppendingPathComponent: @"CatalogueStore.cts"] );
+}
+
 - (void) applicationDidFinishLaunching: (NSNotification *) note
 {
-    NSURL * defaultStoreURL = [[self applicationSupportDirectory] URLByAppendingPathComponent: @"CatalogueStore.cts"];
-    
-    CatalogueWindowController * controller = [[CatalogueWindowController alloc] initWithStoreURL: defaultStoreURL];
-    
+    CatalogueWindowController * controller = [[CatalogueWindowController alloc] initWithStoreURL: self.defaultStoreURL];
     self.mainWindowController = controller;
     [controller release];
+    
+    [[TimeMachineController sharedController] setMainWindowController: self.mainWindowController];
 }
 
 /**
